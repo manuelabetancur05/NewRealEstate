@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'Modern';
+    src: url('./MOD20.TTF');
+}
+
+*{
+    margin: 0;
+    font-family: 'Modern', sans-serif;
+    box-sizing: border-box;
+
+}
+
+.navContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-photo/shiny-night-city_1127-8.jpg?w=996&t=st=1667954299~exp=1667954899~hmac=10874ed4f35b2bd532e1763f752821e3dc72cfd348c04bd92fc95a5d22021d56');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainDivNav{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: 250px;
+    
+}
+
+
+.linkNav{
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    display: inline-block;
+}
+
+.linkNav:hover{
+    color: #102133;
+    box-shadow: inset 210px 0 0 0 whitesmoke;
+}
+
+.pContainer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    color: whitesmoke;
+    font-size: 70px;
+    padding-bottom: 100px;
+}
+
+.mainContent{
+    width: 100%;
+    
+}
+
+.cardSection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 80px 0 80px ;
+    justify-content: center;
+    row-gap: 100px;
+    column-gap: 50px;
+}
+
+.firstContentMain{
+    width: 100%;
+    height: 80px;
+    background-color: #102133;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tH2Main{
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+
+
+.cardInfo{
+    background-color: #102133;
+    width: 300px;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+.housePhoto{
+    width: 300px;
+    height: 250px;
+}
+
+.housePhoto img{
+    width: 100%;
+    height: 100%;
+}
+
+.infoicon{
+     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: baseline;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.iconCard{
+    width: 20px;
+    height: 20px;
+}
+
+.addressCard p{
+    font-size: 18px;
+}
+
+.buttonCardContainer{
+    display: flex;
+    justify-content: end;
+}
+
+.buttonCard{
+    border: 2px solid whitesmoke;
+    background-color: #102133;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footerContainer{
+    background-color: #102133;
+    width: 100%;
+    /* height: 400px; */
+    margin-top: 100px;
+}
+
+.officesContainer p{
+    font-family: 'MonteCarlo', cursive;
+    display: flex;  
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+
+.sLetterContainer{
+    background-color: #102133;
+    border-top: 1px solid whitesmoke;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: end;
+    height: 80px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.logo{
+    width: 250px;
+}
+
+.officeTitle{
+    font-family: 'MonteCarlo', cursive;
+    color: whitesmoke;
+    font-size: 64px;
+    font-weight: 200;
+}
+
+.pOffices{
+    color: whitesmoke;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.groupOffice{
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.groupContact{
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+    column-gap: 15px;
+    padding-bottom: 15px;
+}
+
+.iconOficces{
+    width: 40px;
+    height: 40px;
+}
+
+.iconContact{
+    width: 40px;
+    height: 40px;
+}
+
+.tcontact{
+    font-family: 'MonteCarlo', cursive;
+    font-weight: 200;
+    color: whitesmoke;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 480px){
+    .navContainer{
+        background-position: right center;
+    }
+
+    .pContainer{
+        left: 15%;
+        font-size: 30px;
+    }
+
+    .pNav{
+        font-size: 45px;
+    }
+
+    .tH2Main{
+        color: whitesmoke;
+        font-size: 25px;
+    }
+
+    .logoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sLetterContainer{
+        padding-bottom: 18px;
+        font-size: 22px;
+    }
+
+    .officesContainer{
+        padding-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .navContainer{
+        background-position: right center;
+    }
+
+    .pContainer{
+        left: 20%;
+        font-size: 40px;
+    }
+
+    .logoContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .officesContainer{
+        padding-bottom: 35px;
+    }
+}
